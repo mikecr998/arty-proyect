@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/66f5e943e2.js' crossorigin='anonymous'></script>
+  <title>Arty Architecture</title>
+</head>
+<body>
+  <div class="btn-up" id="btn-up">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <!-- Primera vista -->
+  <header class="header header-gsap">
+    <img class="logo-esquinado" src="images/logo.png" alt="logo">
+    <div class="icono-menu" id="menu-icon">
+      <div class="barra1"></div>
+      <div class="barra2"></div>
+      <div class="barra3"></div>
+    </div>
+    <img src="images/logo-movil.png" alt="" class="logo-mobile">
+    <div class="vacio"></div>
+    <nav class='menu-container'>
+      <ul class='menu' id="menu">
+        <li><a href='index.html'>Inicio</a></li>
+        <li><a href='servicios.html'>Servicios</a></li>
+        <li><a href='proyectos.html'>Proyectos</a></li>
+        <li><a href='contacto.html'>Contacto</a></li>
+
+        <div class="redes">
+          <a href="#">
+            <i class="fab fa-behance"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <section class="first-view-servicios">
+    <div class="frase titulo-servicios-gsap">
+      <h2>Nuestros proyectos son únicos y profesionales</h2>
+    </div>
+  </section>
+  <!-- Video -->
+  <section class="video">
+    <div class="container">
+      <div class="contenido">
+        <p>Soluciones Arquitectónicas e
+          Ingenierías de Índole Residencial,
+          Comercial e Institucional.</p>
+      </div>
+      <article class="video-contenedor-padre">
+        <div class="video-contenedor">
+          <iframe src="https://www.youtube.com/embed/GbltnTApqrY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Servicios -->
+  <section class="servicios container">
+    <article class="card servicios-gsap servicio1-gsap">
+      <div class="cabecera">
+        <p>Arquitectura</p>
+        <i class="fas fa-ruler-combined"></i>
+      </div>
+      <div class="contenido">
+        <ul>
+          <li>Planificación Y Desarrollo</li>
+          <li>Gestión de Proyecto</li>
+          <li>Ingeniería Estructural</li>
+        </ul>
+      </div>
+    </article>
+    <article class="card servicios-gsap servicio2-gsap">
+      <div class="cabecera">
+        <p>Modelado 3D</p>
+        <i class="fas fa-cube"></i>
+      </div>
+      <div class="contenido">
+        <ul>
+          <li>Renderizado Interior</li>
+          <li>Visualización</li>
+          <li>Arquitectura VR</li>
+        </ul>
+      </div>
+    </article>
+    <article class="card servicios-gsap servicio3-gsap">
+      <div class="cabecera">
+        <p>Diseño</p>
+        <i class="fas fa-pencil-ruler"></i>
+      </div>
+      <div class="contenido">
+        <ul>
+          <li>Diseño de Interiores</li>
+          <li>Diseño Residencial</li>
+          <li>Detallado Profesional</li>
+        </ul>
+      </div>
+    </article>
+    <article class="card servicios-gsap servicio4-gsap">
+      <div class="cabecera">
+        <p>Administración</p>
+        <i class="fas fa-file"></i>
+      </div>
+      <div class="contenido">
+        <ul>
+          <li>Gestión de Riesgos</li>
+          <li>Cotabilidad</li>
+          <li>Gestión de Proyectos</li>
+        </ul>
+      </div>
+    </article>
+    <article class="card servicios-gsap servicio5-gsap">
+      <div class="cabecera">
+        <p>Consultoría</p>
+        <i class="fas fa-comment-dots"></i>
+      </div>
+      <div class="contenido">
+        <ul>
+          <li>Edición de Especificaciónes</li>
+          <li>Asistencia de DIseño</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="ubicacion">
+        <p class="titulo"><i class="fas fa-map-marker-alt"></i> Ubicación</p>
+        <p class="contenido">Calle 64 #892 entre 68 y 87A
+          Av. Los Pinos, Fracc. Las Américas
+          CP. 971314 Mérida, Yucatán</p>
+      </div>
+      <div class="llamanos">
+        <p class="titulo"><i class="fas fa-phone-alt"></i> Llamanos</p>
+        <p class="contenido">999-213-23-25</p>
+        <p class="contenido">Atención Lunes a Viernes
+          de 8:00 am a 7:00 pm</p>
+      </div>
+      <div class="redes">
+        <p class="titulo">Siguenos en redes</p>
+        <div class="redes-contenedor">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <figure class="logo">
+        <img src="images/logo.png" alt="logo">
+      </figure>
+    </div>
+  </footer>
+  <!-- Animaciones -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <!-- JS -->
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/66f5e943e2.js' crossorigin='anonymous'></script>
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+  <script src="jquery.tinycarousel.js"></script>
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+  <title>Arty Architecture</title>
+</head>
+<body>
+  <script>
+    $(document).ready(function()
+      {
+          $('#slider1').tinycarousel();
+      });
+  </script>
+  <!-- Boton subir -->
+  <div class="btn-up" id="btn-up">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <!-- Primera vista -->
+  <section class="first-view">
+    <div class="left">
+      <figure class="logo">
+        <img src="images/logo.png" alt="logo" id="btn-modal">
+      </figure>
+      <div class="social">
+        <a href="#" class="item">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="#" class="item">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="item">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="right">
+      <header class="">
+        <div class="icono-menu" id="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <img src="images/logo-movil.png" alt="" class="logo-mobile">
+        <div class="vacio"></div>
+        <nav class='menu-container'>
+          <ul class='menu' id="menu">
+            <li><a href='index.html'>Inicio</a></li>
+            <li><a href='servicios.html'>Servicios</a></li>
+            <li><a href='proyectos.html'>Proyectos</a></li>
+            <li><a href='contacto.html'>Contacto</a></li>
+
+            <div class="redes">
+              <a href="#">
+                <i class="fab fa-behance"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <div class="contenedor">
+        <div class="titulos">
+          <h1 class="title titulos-principales-gsap">DISEÑO Y CONSTRUCCIÓN A TU MEDIDA</h1>
+          <h2 class="titulos-principales-gsap">Con más de 20 años de experiencia e
+          innovación, Arty crea entornos para
+          inspirar la forma en la que las personas viven. </h2>
+        </div>
+        <div class="images">
+          <figure class="barras1-gsap">
+            <p>ARQUITECTURA</p>
+          </figure>
+          <figure class="barras1-gsap">
+            <p>MODELADO 3D</p>
+          </figure>
+          <figure class="barras1-gsap">
+            <p>DISEÑO</p>
+          </figure>
+        </div>
+      </div>
+      </div>
+  </section>
+<!-- Quienes Somos -->
+  <section class="quienes-somos container">
+    <div class="contenido">
+      <h2 class="heading quienes-somos-gsap">Quienes Somos <div class="after"></div></h2>
+      <p class="quienes-somos-gsap">Somos una empresa con mucha experiencia por los múltiples trabajos que hemos realizado, tanto en la iniciativa privada como en la pública.</p>
+      <p class="quienes-somos-gsap">Realizamos todo tipo de proyectos arquitectónicos, desde una vivienda, hasta edificios comerciales, bodegas, mantenimiento a edificios, construcción de locales comerciales, entre otros. En todos nuestros proyectos, reflejamos las mejores ideas para optimizar espacios y obtener el mejor resultado económico.</p>
+    </div>
+    <div class="images">
+      <figure class='img-container barras2-gsap'>
+        <img src='images/barra4.jpg' alt='construccion'>
+      </figure>
+      <figure class='img-container barras2-gsap'>
+        <img src='images/barra5.jpg' alt='construccion'>
+      </figure>
+      <figure class='img-container barras2-gsap'>
+        <img src='images/barra6.jpg' alt='construccion'>
+      </figure>
+    </div>
+  </section>
+  <!-- Tabs -->
+  <section class="tabs container">
+    <ul class="tabs-menu">
+      <li><a href="#opc1" id="btn1" class="link">Misión</a></li>
+      <li><a href="#opc2" id="btn2" class="link">Visión</a></li>
+      <li><a href="#opc3" id="btn3" class="link">Filosofía</a></li>
+    </ul>
+
+    <div id="contenedor-tabs" class="container contenedor-tabs">
+      <article class="tab" id="opc1">
+        <p>Nuestro compromiso es el de desarrollar y optimizar la calidad de vida de nuestros clientes, mediante el cumplimiento de los más altos estándares de calidad y profesionalismo, en el diseño y construcción de espacios arquitectónicos, comprometidos siempre con la conservación así como la optimización de recursos para el cuidado del medio ambiente.
+        </p>
+        <figure class="img-mision">
+        </figure>
+      </article>
+      <article class="tab" id="opc2">
+        <p>Ser una empresa constructora líder en el sureste mexicano, reconocida en el mercado por su capacidad, calidad, seguridad e innovación en la elaboración de soluciones arquitectónicas e ingenierías de índole habitacional, comercial e institucional.
+        </p>
+        <figure class="img-vision">
+        </figure>
+      </article>
+      <article class="tab" id="opc3">
+        <p>Creemos que la arquitectura como expresión de la armonía entre estética y función, el espacio como un dialogo entre el entorno y el habitat humano. El sitio y su contexto es el eje rector de cada proyecto y su análisis, se complementa con el propósito del cliente que en conjunto crean la escencia de cada proyecto.
+        </p>
+        <figure class="img-filosofia">
+        </figure>
+      </article>
+    </div>
+  </section>
+  <!-- Banner -->
+  <figure class="banner1">
+    <div class="filtro"></div>
+    <p>CREAMOS ESPACIOS EN TU VIDA, <span>SOLO CONFÍA</span></p>
+  </figure>
+  <!-- Nuestros Ultimos Proyectos -->
+  <section class="ultimos-proyectos container">
+    <h2 class="heading nuestros-proyectos-gsap">Nuestros Últimos Proyectos <div class="after"></div></h2>
+    <div class="galeria">
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto1.jpg" class="fancybox" title="Departamento en Las Villas,Monterrey" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Departamento en Las Villas, Monterrey</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto2.jpg" class="fancybox" title="Residencia Grijalva, Las Lomas" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Residencia Grijalva, Las Lomas</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto3.jpg" class="fancybox" title="Pasillo, Empresas Marrufo" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Pasillo, Empresas Marrufo</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto4.jpg" class="fancybox" title="Sala de juntas, Coca Cola" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Sala de juntas, Coca Cola</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto5.jpg" class="fancybox" title="Casa en Gran Santa Fe, Mérida" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Casa en Gran Santa Fe, Mérida</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto6.jpg" class="fancybox" title="Residencia, El Paraíso NL" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Residencia, El Paraíso NL</p>
+        </div>
+      </figure>
+    </div>
+    <a href="proyectos.html" class="boton hvr-sweep-to-right boton-gsap">Ver todos</a>
+  </section>
+  <!-- Clip-Path -->
+  <section class="clip-path">
+    <div class="contenedor container">
+      <article>
+        <div class="contenido">
+          <h3>Arquitectura</h3>
+          <ul>
+            <li>Planificación y Desarrollo</li>
+            <li>Gestíon de Proyecto</li>
+            <li>Ingeniería Estructutal</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p>+ 20 <span>AÑOS DE EXPERIENCIA</span></p>
+        </div>
+      </article>
+      <article>
+        <div class="contenido">
+          <h3>Modelado 3D</h3>
+          <ul>
+            <li>Renderizado Interior</li>
+            <li>Visualización</li>
+            <li>Arquitectura VR</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p>57 <span>PROYECTOS ACABADOS</span></p>
+        </div>
+      </article>
+      <article>
+        <div class="contenido">
+          <h3>Diseño</h3>
+          <ul>
+            <li>Diseño de Interiores</li>
+            <li>Diseño Residencial</li>
+            <li>Detallado Profesional</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p>+ 12 <span>CLIENTES
+            SATISFECHOS</span></p>
+        </div>
+      </article>
+    </div>
+      <img src="images/figura.jpg" alt="figura">
+  </section>
+  <!-- Casos de Exito y Clientes -->
+  <section class="casos-clientes container">
+    <div class="casos-exito">
+      <h2 class="heading casos-exito-gsap">Casos de Éxito <div class="after"></div></h2>
+      <section id="slider1" class="">
+        <div class="viewport">
+          <div class="overview">
+            <article class="card">
+              <p class="texto">Seleccionamos a Arty debido a la rigurosa formación y formación en diseño de sus arquitectos. ¡Hicieron el mejor trabajo!</p>
+              <p class="nombre">Jordan Ubizarrieta, "Empresas Ubizarrieta"</p>
+            </article>
+            <article class="card">
+              <p class="texto">Cuando necesitábamos especialistas en diseño y arquitectura, su equipo estuvo ahí para nosotros. ¡Gracias!</p>
+              <p class="nombre">Kate williams, “Fireworx”</p>
+            </article>
+            <article class="card">
+              <p class="texto">De todas las empresas de arquitectura que ofrecen servicios de diseño y construcción, ¡eres la mejor!</p>
+              <p class="nombre">Peter McMillan, “MCM ltd.”</p>
+            </article>
+          </div>
+        </div>
+        <div class="flechas">
+          <a href="#" class="buttons prev">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+          <a href="#" class="buttons next">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+    <div class="clientes">
+      <h2 class="heading clientes-gsap">Nuestros Clientes<div class="after"></div></h2>
+      <figure class='img-container img-cliente'>
+        <img src='images/cliente1.png' alt='cliente1'>
+      </figure>
+      <figure class='img-container img-cliente'>
+        <img src='images/cliente2.png' alt='cliente2'>
+      </figure>
+      <figure class='img-container img-cliente'>
+        <img src='images/cliente3.png' alt='cliente3'>
+      </figure>
+      <figure class='img-container img-cliente'>
+        <img src='images/cliente4.png' alt='cliente4'>
+      </figure>
+      <figure class='img-container img-cliente'>
+        <img src='images/cliente5.png' alt='cliente5'>
+      </figure>
+    </div>
+  </section>
+  <!-- Equipo -->
+  <section class="equipo container">
+    <h2 class="heading equipo-gsap">Nuestro Equipo<div class="after"></div></h2>
+    <div class="contenedor-cards">
+      <article class="card personas-gsap persona1-gsap">
+        <figure>
+          <img src="images/persona1.jpg" alt="persona1">
+        </figure>
+        <div class="nombre-icono">
+          <div class="nombre">
+            <p class="name">Eduardo García Figueroa</p>
+            <p>Arquitecto / Fundador</p>
+          </div>
+          <i class="fas fa-plus-square btn-acordeon"></i>
+        </div>
+        <div class="contenido">
+          <p>Arquitecto egresado de la Universidad
+            Iberoamericana Ciudad de México. Líder
+            del proyecto en despachos de diseño en
+            el ramo habitacional de lujo.
+            Fundador de Arty Architecture 2010.</p>
+        </div>
+      </article>
+      <article class="card personas-gsap persona2-gsap">
+        <figure>
+          <img src="images/persona2.jpg" alt="persona1">
+        </figure>
+        <div class="nombre-icono">
+          <div class="nombre">
+            <p class="name">José Manuel Martin Amate </p>
+            <p>Arquitecto / Asociado</p>
+          </div>
+          <i class="fas fa-plus-square btn-acordeon"></i>
+        </div>
+        <div class="contenido">
+          <p>Master en arquitectura egresado en 2012 de la Universidad de Sevilla. Con estudios por el Politécnico di Bari, Italia. Experiencia en España como experto renderista. docente, arquitecto y diseño de mobiliario, siendo participante en la Feria del Mueble de Milán en 2012.</p>
+        </div>
+      </article>
+      <article class="card personas-gsap persona3-gsap">
+        <figure>
+          <img src="images/persona3.jpg" alt="persona1">
+        </figure>
+        <div class="nombre-icono">
+          <div class="nombre">
+            <p class="name">Pablo García Figueroa</p>
+            <p>Arquitecto / Asociado</p>
+          </div>
+          <i class="fas fa-plus-square btn-acordeon"></i>
+        </div>
+        <div class="contenido">
+          <p>Arquitecto egresado de la Universidad Iberoamericana Ciudad de México. Experiencia profesional en proyectos enfocados a Fotografía de Arquitectura e imagen.</p>
+        </div>
+      </article>
+      <article class="card personas-gsap persona4-gsap">
+        <figure>
+          <img src="images/persona4.jpg" alt="persona1">
+        </figure>
+        <div class="nombre-icono">
+          <div class="nombre">
+            <p class="name">Iván Guzmán Lepe</p>
+            <p>Arquitecto / Asociado</p>
+          </div>
+          <i class="fas fa-plus-square btn-acordeon"></i>
+        </div>
+        <div class="contenido">
+          <p>Licenciado en Arquitectura por la Universidad de Guadalajara. Especializado en el área de supervisión, control y administración de obra. Inició experiencia profesional en construcción en Guadalajara hasta 2015.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="ubicacion">
+        <p class="titulo"><i class="fas fa-map-marker-alt"></i> Ubicación</p>
+        <p class="contenido">Calle 64 #892 entre 68 y 87A
+          Av. Los Pinos, Fracc. Las Américas
+          CP. 971314 Mérida, Yucatán</p>
+      </div>
+      <div class="llamanos">
+        <p class="titulo"><i class="fas fa-phone-alt"></i> Llamanos</p>
+        <p class="contenido">999-213-23-25</p>
+        <p class="contenido">Atención Lunes a Viernes
+          de 8:00 am a 7:00 pm</p>
+      </div>
+      <div class="redes">
+        <p class="titulo">Siguenos en redes</p>
+        <div class="redes-contenedor">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <figure class="logo">
+        <img src="images/logo.png" alt="logo">
+      </figure>
+    </div>
+  </footer>
+  <!-- Animaciones -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <!-- JS -->
+  <script src="app.js"></script>
+  <script src="./fancybox/jquery.fancybox.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+      })
+    })
+  </script>
+</body>
+</html>

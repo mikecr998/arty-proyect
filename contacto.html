@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/66f5e943e2.js' crossorigin='anonymous'></script>
+  <title>Arty Architecture</title>
+</head>
+<body>
+  <!-- Boton subir -->
+  <div class="btn-up" id="btn-up">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <!-- Modal -->
+  <div class="mascara" id="lamascara">
+    <div class="contenido-modal">
+      <i id="btn-cerrar" class="fas fa-times-circle cerrar"></i>
+      <div class="titulo-modal">
+        <i class="far fa-check-circle done"></i>
+        <h3>Mensaje enviado correctamente</h3>
+      </div>
+      <p>Te responderemos a la brevedad</p>
+      <a href="index.html" class="hvr-sweep-to-right">Hecho</a>
+    </div>
+  </div>
+  <!-- Primera Vista -->
+  <header class="header header-gsap">
+    <img class="logo-esquinado" src="images/logo.png" alt="logo">
+    <div class="icono-menu" id="menu-icon">
+      <div class="barra1"></div>
+      <div class="barra2"></div>
+      <div class="barra3"></div>
+    </div>
+    <img src="images/logo-movil.png" alt="" class="logo-mobile">
+    <div class="vacio"></div>
+    <nav class='menu-container'>
+      <ul class='menu' id="menu">
+        <li><a href='index.html'>Inicio</a></li>
+        <li><a href='servicios.html'>Servicios</a></li>
+        <li><a href='proyectos.html'>Proyectos</a></li>
+        <li><a href='contacto.html'>Contacto</a></li>
+
+        <div class="redes">
+          <a href="#">
+            <i class="fab fa-behance"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <section class="contacto">
+    <form id="formulario" action="enviar.php" method="POST" class="form form-gsap">
+      <h3>AGENDA UNA CITA CON NOSOTROS</h3>
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Nombre" name="nombre">
+      </div>
+      <div class="campo">
+        <label for="empresa">Nombre de la empresa</label>
+        <input type="text" placeholder="Nombre" name="empresa">
+      </div>
+      <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" name="email">
+      </div>
+      <div class="campo">
+        <label for="telefono">Teléfono</label>
+        <input type="number" placeholder="Telefono" name="telefono">
+      </div>
+      <div class="campo">
+        <label for="fecha">Fecha</label>
+        <input type="date" placeholder="Fecha" name="fecha">
+      </div>
+      <div class="campo">
+        <label for="hora">Hora</label>
+        <input type="time" placeholder="Hora" name="hora">
+      </div>
+      <div class="campo textarea">
+        <label for="msg">Platicanos brevemente</label>
+        <textarea cols="30" rows="5" placeholder="Mensaje" name="mensaje" form="formulario"></textarea>
+      </div>
+      <button type="submit" id="btn-modal" class="hvr-sweep-to-right">Enviar</button>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="ubicacion">
+        <p class="titulo"><i class="fas fa-map-marker-alt"></i> Ubicación</p>
+        <p class="contenido">Calle 64 #892 entre 68 y 87A
+          Av. Los Pinos, Fracc. Las Américas
+          CP. 971314 Mérida, Yucatán</p>
+      </div>
+      <div class="llamanos">
+        <p class="titulo"><i class="fas fa-phone-alt"></i> Llamanos</p>
+        <p class="contenido">999-213-23-25</p>
+        <p class="contenido">Atención Lunes a Viernes
+          de 8:00 am a 7:00 pm</p>
+      </div>
+      <div class="redes">
+        <p class="titulo">Siguenos en redes</p>
+        <div class="redes-contenedor">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <figure class="logo">
+        <img src="images/logo.png" alt="logo">
+      </figure>
+    </div>
+  </footer>
+    <!-- Animaciones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <!-- JS -->
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+  <script src="app.js"></script>
+  <script>
+    // Modal
+    // const btnModal = document.querySelector("#btn-modal")
+    // const modal = document.querySelector("#lamascara")
+    // const cerrar = document.querySelector("#btn-cerrar")
+
+    // btnModal.addEventListener("click", (e)=> {
+    //   // e.preventDefault()
+    //   modal.classList.add("mostrarModal")
+    // })
+
+    // cerrar.addEventListener("click", ()=> {
+    //   modal.classList.remove("mostrarModal")
+    // })
+
+    // window.addEventListener("click", (e)=> {
+    //   if(e.target === modal) {
+    //     modal.classList.remove("mostrarModal")
+    //   }
+    // })
+  </script>
+  
+</body>
+</html>

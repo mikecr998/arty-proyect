@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/66f5e943e2.js' crossorigin='anonymous'></script>
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+  <script src="responsiveslides.min.js"></script>
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+  <script>
+    $(function () {
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+  <title>Arty Architecture</title>
+</head>
+<body>
+  <div class="btn-up" id="btn-up">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <header class="header header-gsap">
+    <img class="logo-esquinado" src="images/logo.png" alt="logo">
+    <div class="icono-menu" id="menu-icon">
+      <div class="barra1"></div>
+      <div class="barra2"></div>
+      <div class="barra3"></div>
+    </div>
+    <img src="images/logo-movil.png" alt="" class="logo-mobile">
+    <div class="vacio"></div>
+    <nav class='menu-container'>
+      <ul class='menu' id="menu">
+        <li><a href='index.html'>Inicio</a></li>
+        <li><a href='servicios.html'>Servicios</a></li>
+        <li><a href='proyectos.html'>Proyectos</a></li>
+        <li><a href='contacto.html'>Contacto</a></li>
+
+        <div class="redes">
+          <a href="#">
+            <i class="fab fa-behance"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <!-- Slider -->
+  <section class="slider callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <!-- <img src="images/proyecto6.jpg" alt="proyecto6"> -->
+          <div class="descripcion">
+            <p>Residencia, El Paraíso NL</p>
+          </div>
+        </li>
+        <li>
+          <!-- <img src="images/proyecto7.jpg" alt="proyecto7"> -->
+          <div class="descripcion">
+            <p>Casa en Altabrisa, Mérida</p>
+          </div>
+        </li>
+        <li>
+          <!-- <img src="images/proyecto8.jpg" alt="proyecto8"> -->
+          <div class="descripcion">
+            <p>Residencia en Almendros, Cd. de México</p>
+          </div>
+        </li>
+        <li>
+          <!-- <img src="images/proyecto9.jpg" alt="proyecto9"> -->
+          <div class="descripcion">
+            <p>Casa en Las Américas, Mérida</p>
+          </div>
+        </li>
+      </ul>
+  </section>
+  <!-- Proyectos -->
+  <section class="proyectos container">
+    <h2 class="heading titulo-proyectos-gsap">Proyectos <div class="after"></div></h2>
+    <div class="galeria">
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto1.jpg" class="fancybox" title="Departamento en Las Villas,Monterrey" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Departamento en Las Villas, Monterrey</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto2.jpg" class="fancybox" title="Residencia Grijalva, Las Lomas" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Residencia Grijalva, Las Lomas</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto3.jpg" class="fancybox" title="Pasillo, Empresas Marrufo" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Pasillo, Empresas Marrufo</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto4.jpg" class="fancybox" title="Sala de juntas, Coca Cola" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Sala de juntas, Coca Cola</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto5.jpg" class="fancybox" title="Casa en Gran Santa Fe, Mérida" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Casa en Gran Santa Fe, Mérida</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto6.jpg" class="fancybox" title="Residencia, El Paraíso NL" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Residencia, El Paraíso NL</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto7.jpg" class="fancybox" title="Casa en Altabrisa, Mérida" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Casa en Altabrisa, Mérida</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto8.jpg" class="fancybox" title="Residencia en Almendros, Cd. de México" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Residencia en Almendros, Cd. de México</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto9.jpg" class="fancybox" title="Casa en Las Américas, Mérida" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Casa en Las Américas, Mérida</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto10.jpg" class="fancybox" title="Departamento en Tulum" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Departamento en Tulum</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto11.jpg" class="fancybox" title="Alberca" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Alberca</p>
+        </div>
+      </figure>
+      <figure class="foto-galeria-gsap">
+        <div class="hover">
+          <a href="images/proyecto12.png" class="fancybox" title="Fachada de ResidenciaL" rel="gallery1">
+            <i class="fas fa-search-plus"></i>
+          </a>
+          <p>Fachada de Residencia</p>
+        </div>
+      </figure>
+    </div>
+  </section>
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+      <div class="ubicacion">
+        <p class="titulo"><i class="fas fa-map-marker-alt"></i> Ubicación</p>
+        <p class="contenido">Calle 64 #892 entre 68 y 87A
+          Av. Los Pinos, Fracc. Las Américas
+          CP. 971314 Mérida, Yucatán</p>
+      </div>
+      <div class="llamanos">
+        <p class="titulo"><i class="fas fa-phone-alt"></i> Llamanos</p>
+        <p class="contenido">999-213-23-25</p>
+        <p class="contenido">Atención Lunes a Viernes
+          de 8:00 am a 7:00 pm</p>
+      </div>
+      <div class="redes">
+        <p class="titulo">Siguenos en redes</p>
+        <div class="redes-contenedor">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <figure class="logo">
+        <img src="images/logo.png" alt="logo">
+      </figure>
+    </div>
+  </footer>
+    <!-- Animaciones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <!-- JS -->
+  <script src="app.js"></script>
+  <script src="./fancybox/jquery.fancybox.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+      })
+    })
+  </script>
+</body>
+</html>
